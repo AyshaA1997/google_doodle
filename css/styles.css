@@ -1,12 +1,91 @@
-/*
-  DIAGNOSTIC STYLING
-*/
-body {
-  background: gray;
-}
 
-* {
-  outline: 1px dotted black;
-}
 
 /* Your Awesome Scripts */
+/* External styling from: https://codepen.io/manikoth/pen/NNNBYe.css
+ */
+/* Doodle Stage */
+
+
+@import url('https://fonts.googleapis.com/css?family=Eczar');
+
+.default         
+  { cursor: default; }
+
+#stage, 
+h1 {
+  font-size: 150px;
+  font-family: eczar;
+  color: seashell;
+  text-align: center;
+}
+
+#stage {
+  /* Fixed Sizes   */
+  height: 300px;
+  width: 600px;
+
+  position: relative;
+  overflow: hidden;
+}
+
+h1{
+  animation: fade;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-outout;
+  
+}
+
+#whale1{
+  position: absolute;
+  width: 100px;
+  height: auto;
+  top: 170px;
+  
+  animation: slide 9s infinite;
+  animation-timing-function: ease-in-out;
+}
+
+#whale2{
+  position: absolute;
+  width: 100px;
+  height: auto;
+  top: 190px;
+  
+  animation: slide 9s infinite;
+  animation-timing-function: ease-in-out;
+  animation-delay: .3s;
+}
+
+#whale3{
+  position: absolute;
+  width: 100px;
+  height: auto;
+  top: 120px;
+  
+  animation: slide 9s infinite;
+  animation-timing-function: ease-in-out;
+  animation-delay: .5s;
+}
+/* keyframes */
+/*  google  */
+@keyframes fade{
+  
+  0% {
+    position: absolute;
+    left: 73px;
+    opacity: 0;
+  }
+
+  100% {
+    position: absolute;
+    left: 73px;
+    opacity: 1;
+  }
+}
+
+/* whale */
+@keyframes slide{
+  0%{ transform: translatex(-300px);}
+ 100% {transform: translatex(1000px);}
+}
