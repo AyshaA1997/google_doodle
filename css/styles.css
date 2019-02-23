@@ -1,20 +1,17 @@
-
-
-/* Your Awesome Scripts */
 /* External styling from: https://codepen.io/manikoth/pen/NNNBYe.css
  */
 /* Doodle Stage */
 
 
-@import url('https://fonts.googleapis.com/css?family=Eczar');
+@import url('https://fonts.googleapis.com/css?family=Chango');
 
 .default         
   { cursor: default; }
 
 #stage, 
 h1 {
-  font-size: 150px;
-  font-family: eczar;
+  font-size: 100px;
+  font-family: Chango;
   color: seashell;
   text-align: center;
 }
@@ -29,11 +26,12 @@ h1 {
 }
 
 h1{
+  top: 100px;
   animation: fade;
   animation-duration: 15s;
   animation-iteration-count: infinite;
-  animation-timing-function: ease-in-outout;
-  
+  animation-timing-function: ease-in-out;
+  animation-delay: 5s;
 }
 
 #whale1{
