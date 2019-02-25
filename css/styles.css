@@ -29,6 +29,7 @@ h1{
   top: 100px;
   animation: fade;
   animation-duration: 15s;
+  animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
   
 }
@@ -39,7 +40,7 @@ h1{
   height: auto;
   top: 170px;
   
-  animation: slide 11s;
+  animation: slide 11s infinite;
   animation-timing-function: ease-in-out;
   animation-timing-function: cubic-bezier(.2, .5, .7, .9);
 }
@@ -50,7 +51,7 @@ h1{
   height: auto;
   top: 190px;
   
-  animation: slide 11s;
+  animation: slide 11s infinite;
   animation-timing-function: ease-in-out;
   animation-delay: .5s;
   animation-timing-function: cubic-bezier(.2, .5, .7, .9);
@@ -62,7 +63,7 @@ h1{
   height: auto;
   top: 120px;
   
-  animation: slide 11s;
+  animation: slide 11s infinite;
   animation-timing-function: ease-in-out;
   animation-delay: .7s;
   animation-timing-function: cubic-bezier(.2, .5, .7, .9);
@@ -74,7 +75,7 @@ h1{
   height: auto;
   top: 175px;
   
-  animation: slide2 8s;
+  animation: slide2 8s infinite;
   animation-timing-function: ease-in-out;
   animation-timing-function: cubic-bezier(.2, .5, .7, .9);
 }
