@@ -29,9 +29,8 @@ h1{
   top: 100px;
   animation: fade;
   animation-duration: 15s;
-  animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
-  animation-delay: 5s;
+  
 }
 
 #whale1{
@@ -40,8 +39,9 @@ h1{
   height: auto;
   top: 170px;
   
-  animation: slide 9s infinite;
+  animation: slide 11s;
   animation-timing-function: ease-in-out;
+  animation-timing-function: cubic-bezier(.2, .5, .7, .9);
 }
 
 #whale2{
@@ -50,9 +50,10 @@ h1{
   height: auto;
   top: 190px;
   
-  animation: slide 9s infinite;
+  animation: slide 11s;
   animation-timing-function: ease-in-out;
-  animation-delay: .3s;
+  animation-delay: .5s;
+  animation-timing-function: cubic-bezier(.2, .5, .7, .9);
 }
 
 #whale3{
@@ -61,10 +62,23 @@ h1{
   height: auto;
   top: 120px;
   
-  animation: slide 9s infinite;
+  animation: slide 11s;
   animation-timing-function: ease-in-out;
-  animation-delay: .5s;
+  animation-delay: .7s;
+  animation-timing-function: cubic-bezier(.2, .5, .7, .9);
 }
+
+#whale4{
+  position: absolute;
+  width: 100px;
+  height: auto;
+  top: 175px;
+  
+  animation: slide2 8s;
+  animation-timing-function: ease-in-out;
+  animation-timing-function: cubic-bezier(.2, .5, .7, .9);
+}
+
 /* keyframes */
 /*  google  */
 @keyframes fade{
@@ -85,6 +99,12 @@ h1{
 /* whale */
 @keyframes slide{
   0%{ transform: translatex(-300px);}
+ 100% {transform: translatex(1000px);}
+}
+
+/* whale 4*/
+@keyframes slide2{
+  0%{ transform: translatex(-3000px);}
  100% {transform: translatex(1000px);}
 }
 
