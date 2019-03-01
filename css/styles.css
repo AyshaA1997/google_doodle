@@ -3,21 +3,16 @@
 /* Doodle Stage */
 
 
-/* External styling from: https://codepen.io/manikoth/pen/NNNBYe.css
- */
-/* Doodle Stage */
-
-
 @import url('https://fonts.googleapis.com/css?family=Chango');
 
 .default         
   { cursor: default; }
 
-/* #stage,  */
+#stage, 
 h1 {
   font-size: 100px;
   font-family: Chango;
-  color: navy;
+  color: seashell;
   text-align: center;
 }
 
@@ -33,7 +28,7 @@ h1 {
 h1{
   top: 100px;
   animation: fade;
-  animation-duration: 30s;
+  animation-duration: 15s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
   
@@ -48,7 +43,6 @@ h1{
   animation: slide 11s infinite;
   animation-timing-function: ease-in-out;
   animation-timing-function: cubic-bezier(.2, .5, .7, .9);
-  animation-play-state: paused; 
 }
 
 #whale2{
@@ -59,7 +53,7 @@ h1{
   
   animation: slide 11s infinite;
   animation-timing-function: ease-in-out;
-  animation-delay: .3s;
+  animation-delay: .5s;
   animation-timing-function: cubic-bezier(.2, .5, .7, .9);
 }
 
@@ -71,19 +65,32 @@ h1{
   
   animation: slide 11s infinite;
   animation-timing-function: ease-in-out;
-  animation-delay: .5s;
+  animation-delay: .7s;
   animation-timing-function: cubic-bezier(.2, .5, .7, .9);
 }
 
-
-body{
-  background-image: linear-gradient(to top,#1a364d,#a0bce0);
+#whale4{
+  position: absolute;
+  width: 100px;
+  height: auto;
+  top: 175px;
+  
+  animation: slide2 8s infinite;
+  animation-timing-function: ease-in-out;
+  animation-timing-function: cubic-bezier(.2, .5, .7, .9);
 }
+
 /* keyframes */
 /*  google  */
 @keyframes fade{
   
   0% {
+    position: absolute;
+    left: 73px;
+    opacity: 0;
+  }
+
+  30%{
     position: absolute;
     left: 73px;
     opacity: 0;
@@ -100,6 +107,16 @@ body{
 @keyframes slide{
   0%{ transform: translatex(-300px);}
  100% {transform: translatex(1000px);}
+}
+
+/* whale 4*/
+@keyframes slide2{
+  0%{ transform: translatex(-3000px);}
+ 100% {transform: translatex(1000px);}
+}
+
+body{
+  background-image: linear-gradient(to top,#1a364d,#a0bce0);
 }
 
 /* bubbles */
@@ -219,4 +236,3 @@ body{
         margin-left:50px;
     }
 }
-
